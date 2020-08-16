@@ -26,8 +26,8 @@ const LoginForm = (props) => {
       <Formik
         validationSchema={schema}
         initialValues={{
-          username: 'test_super',
-          password: 'Nf<U4f<rDbtDxAPn'
+          username: '',
+          password: ''
         }}
         onSubmit={async ( values, { setSubmitting }) => {
           const status = props.setAuthToken(values)

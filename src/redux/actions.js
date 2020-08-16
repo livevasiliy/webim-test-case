@@ -1,9 +1,6 @@
 import {
   SET_AUTH_TOKEN,
-  CREATE_USER,
   FETCH_USERS,
-  FETCH_USER,
-  UPDATE_USER,
   HIDE_ALERT,
   SHOW_LOADER,
   HIDE_LOADER,
@@ -13,6 +10,7 @@ import {
 } from './types'
 import UserService from '../services/users'
 import AuthService from '../services/auth'
+import { push } from 'connected-react-router'
 const userService = new UserService()
 
 export function setAuthToken (values) {
@@ -25,7 +23,7 @@ export function setAuthToken (values) {
         dispatch({ type: SET_AUTH_TOKEN, payload: authResponse.token })
       }
 
-      dispatch(showAlert(...authResponse.errorMsg))
+      dispatch(showAlert(authResponse.errorMsg))
       setTimeout(() => {
         dispatch(hideAlert())
       }, 3000)
@@ -46,9 +44,13 @@ export function fetchUsers () {
     try
     {
       dispatch(showLoader())
-      const users = await userService.fetchAllUsers()
-      dispatch({ type: FETCH_USERS, payload: users })
-      dispatch(hideLoader())
+      if (!!localStorage.getItem('auth_token')) {
+        const users = await userService.fetchAllUsers()
+        dispatch({ type: FETCH_USERS, payload: users })
+        dispatch(hideLoader())
+      } else {
+        dispatch(push('/login'))
+      }
     } catch (e) {
       dispatch(showAlert(e.message))
       setTimeout(() => {
@@ -56,25 +58,6 @@ export function fetchUsers () {
       }, 300)
       dispatch(hideLoader())
     }
-  }
-}
-
-export function createUser (user) {
-  return async dispatch => {
-    dispatch({ type: CREATE_USER, payload: userService.createUser(user) })
-  }
-}
-
-export function fetchUserById (userId) {
-  return async dispatch => {
-    dispatch({ type: FETCH_USER, payload: userService.fetchUserById(userId) })
-  }
-}
-
-export function updateUserById (userId, userData) {
-  return async dispatch => {
-    dispatch(
-      { type: UPDATE_USER, payload: userService.updateUser(userId, userData) })
   }
 }
 

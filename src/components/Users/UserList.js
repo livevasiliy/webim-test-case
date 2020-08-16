@@ -43,7 +43,7 @@ class UserList extends React.Component {
           value={this.props.searchValue}
         />
         <Table striped bordered hover responsive>
-          <UserListHead users={this.props.users} />
+          <UserListHead />
           <tbody>
           {
             sorted.map(user => <User isHide={

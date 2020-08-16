@@ -1,7 +1,7 @@
 import React from 'react'
-import { Button, Badge } from 'react-bootstrap'
+import { Badge } from 'react-bootstrap'
 
-export default ({ user, isHide }) => {
+export const User = ({ user, isHide }) => {
   return (
     <tr className={isHide === true ? 'd-none' : ''}>
       <td>{user.id}</td>
@@ -23,9 +23,7 @@ export default ({ user, isHide }) => {
             : <Badge variant={'danger'}>No</Badge>
         }
       </td>
-      <td>
-        <Button variant={"warning"}>Edit</Button>
-      </td>
     </tr>
   )
 }
+export default User

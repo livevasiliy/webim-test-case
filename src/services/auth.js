@@ -14,7 +14,6 @@ export default class AuthService {
         }
       })
       .catch((error) => {
-        console.error(error.message)
         return {
           errorMsg: error.response.data.non_field_errors,
           status: error.response.status

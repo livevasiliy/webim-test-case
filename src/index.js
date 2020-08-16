@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { render } from 'react-dom'
 import { compose, createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
@@ -7,13 +7,14 @@ import { rootReducer } from './redux/rootReducer'
 import { createBrowserHistory } from 'history'
 import { ConnectedRouter, routerMiddleware } from 'connected-react-router'
 import { Route, Switch } from 'react-router'
+import axiosAuth from './middleware/axiosMiddleware'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App'
 import AuthLayout from './components/hoc/AuthLayout/AuthLayout'
 import Login from './pages/Login'
 import UsersLayout from './components/hoc/UsersLayout/UsersLayout'
-import Users from './pages/Users'
-import axiosAuth from './middleware/axiosMiddleware'
+const Users = React.lazy(() => import ('./pages/Users').then())
+const NotFound = React.lazy(() => import ('./pages/NotFound').then())
 
 export const history = createBrowserHistory()
 
@@ -45,8 +46,13 @@ render(
             </Route>
             <Route exact path={'/users'}>
               <UsersLayout>
-                <Users/>
+                <Suspense fallback={<div>Loading..</div>}>
+                  <Users/>
+                </Suspense>
               </UsersLayout>
+            </Route>
+            <Route path={"*"}>
+              <Suspense fallback={<div>Loading..</div>}><NotFound /></Suspense>
             </Route>
           </Switch>
         </>
