@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.js": "/webim-test-case/static/js/main.30417d17.chunk.js",
+    "main.js.map": "/webim-test-case/static/js/main.30417d17.chunk.js.map",
+    "runtime-main.js": "/webim-test-case/static/js/runtime-main.f24d962d.js",
+    "runtime-main.js.map": "/webim-test-case/static/js/runtime-main.f24d962d.js.map",
+    "static/css/2.11829350.chunk.css": "/webim-test-case/static/css/2.11829350.chunk.css",
+    "static/js/2.00d6a26b.chunk.js": "/webim-test-case/static/js/2.00d6a26b.chunk.js",
+    "static/js/2.00d6a26b.chunk.js.map": "/webim-test-case/static/js/2.00d6a26b.chunk.js.map",
+    "static/js/3.e6300315.chunk.js": "/webim-test-case/static/js/3.e6300315.chunk.js",
+    "static/js/3.e6300315.chunk.js.map": "/webim-test-case/static/js/3.e6300315.chunk.js.map",
+    "static/css/4.9081b69c.chunk.css": "/webim-test-case/static/css/4.9081b69c.chunk.css",
+    "static/js/4.d3de3ff3.chunk.js": "/webim-test-case/static/js/4.d3de3ff3.chunk.js",
+    "static/js/4.d3de3ff3.chunk.js.map": "/webim-test-case/static/js/4.d3de3ff3.chunk.js.map",
+    "static/js/5.9c739799.chunk.js": "/webim-test-case/static/js/5.9c739799.chunk.js",
+    "static/js/5.9c739799.chunk.js.map": "/webim-test-case/static/js/5.9c739799.chunk.js.map",
+    "index.html": "/webim-test-case/index.html",
+    "precache-manifest.e8aa5b4ec21db4489498122e16eb6c58.js": "/webim-test-case/precache-manifest.e8aa5b4ec21db4489498122e16eb6c58.js",
+    "service-worker.js": "/webim-test-case/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/webim-test-case/static/css/2.11829350.chunk.css.map",
+    "static/css/4.9081b69c.chunk.css.map": "/webim-test-case/static/css/4.9081b69c.chunk.css.map",
+    "static/js/2.00d6a26b.chunk.js.LICENSE.txt": "/webim-test-case/static/js/2.00d6a26b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f24d962d.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.00d6a26b.chunk.js",
+    "static/js/main.30417d17.chunk.js"
+  ]
+}

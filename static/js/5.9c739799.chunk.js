@@ -1,0 +1,2 @@
+(this["webpackJsonpwebim-test-case"]=this["webpackJsonpwebim-test-case"]||[]).push([[5],{165:function(e,t,n){"use strict";n.r(t),n.d(t,"NotFound",(function(){return r}));var a=n(0),c=n.n(a),s=n(149),u=n(150),l=n(110),r=function(){return c.a.createElement(s.a,null,c.a.createElement(u.a,null,c.a.createElement(l.a,null,c.a.createElement("h1",{className:"text-center"},"Not found 404"))))};t.default=r}}]);
+//# sourceMappingURL=5.9c739799.chunk.js.map
