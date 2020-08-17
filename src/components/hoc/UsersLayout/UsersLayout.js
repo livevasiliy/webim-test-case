@@ -7,7 +7,7 @@ export default class AuthLayout extends Component {
       <Container fluid>
         <>
           <Navbar bg="dark" variant="dark" className={"mb-5"}>
-            <Navbar.Brand href="#home">Webim Test-case</Navbar.Brand>
+            <Navbar.Brand href="/">Webim Test-case</Navbar.Brand>
           </Navbar>
         </>
         <Row className={'align-items-center justify-content-center h-100'}>
