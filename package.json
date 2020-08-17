@@ -2,7 +2,6 @@
   "name": "webim-test-case",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://livevasiliy.github.io/webim-test-case",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",

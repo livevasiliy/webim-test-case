@@ -16,7 +16,7 @@ import UsersLayout from './components/hoc/UsersLayout/UsersLayout'
 const Users = React.lazy(() => import ('./pages/Users').then())
 const NotFound = React.lazy(() => import ('./pages/NotFound').then())
 
-export const history = createBrowserHistory('/webim-test-case/')
+export const history = createBrowserHistory('')
 
 const store = createStore(
   rootReducer(history),
