@@ -14,4 +14,4 @@ Username: test_super <br/>
 Password: Nf<U4f<rDbtDxAPn 
 
 ## Демо
-Демо работы проекта доступна по адресу [https://livevasiliy.github.io/webim-test-case](https://livevasiliy.github.io/webim-test-case)
+Демо работы проекта доступна по адресу [https://webim-test-case.web.app/](https://webim-test-case.web.app/)
