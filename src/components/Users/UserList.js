@@ -8,7 +8,7 @@ import {
 import { Table } from 'react-bootstrap'
 import User from './User'
 import Loader from '../shared/Loader'
-import Search from '../Search'
+import Search from '../shared/Search'
 import { ASC } from '../../redux/types'
 import UserListHead from './UserListHead'
 

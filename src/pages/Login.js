@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import LoginForm from '../components/LoginForm'
+import LoginForm from '../components/Auth/LoginForm'
 
 export default () => {
   return (

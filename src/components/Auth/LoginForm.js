@@ -1,7 +1,7 @@
 import React from 'react'
 import { Alert, Button, Form } from 'react-bootstrap'
 import { connect } from 'react-redux'
-import { setAuthToken } from '../redux/actions'
+import { setAuthToken } from '../../redux/actions'
 import { push } from 'connected-react-router'
 import { Formik } from 'formik'
 import * as yup from 'yup'
